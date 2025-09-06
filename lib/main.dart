@@ -9,9 +9,14 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Scaffold homepage = Scaffold(
-      appBar: AppBar(
-        
-        title: Text('Homepage'))
+      appBar: AppBar(title: Text('Homepage')),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.amber,
+        onPressed: () {
+          // TODO Button 
+        },
+        child: const Icon(Icons.add)
+        ),
     );
 
     return MaterialApp(
